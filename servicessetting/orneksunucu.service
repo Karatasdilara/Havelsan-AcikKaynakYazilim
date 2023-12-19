@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=ubuntu
-WorkingDirectory=/home/ubuntu/ders
+WorkingDirectory=/home/ubuntu/servicesders
 ExecStart=/usr/bin/gunicorn --workers 5 --bind unix:app.sock -m 007 wsgi:app
 
 [Install]
